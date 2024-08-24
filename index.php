@@ -442,8 +442,7 @@ if (isset($_SESSION['username'])) {
               document.getElementById('text').value=c;
               document.forms[0].submit();
           });
-
-        </script>
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
