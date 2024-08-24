@@ -70,7 +70,7 @@ if (isset($_SESSION['username'])) {
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 style=color:#000;>Welcome LCIANS Alumni's</h1>
       <h2>The Right Choice</h2>
-      <a href="#about" class="btn-get-started">Get Started</a>
+      <a href="portal.php" class="btn-get-started">Go to Portal</a>
     </div>
   </section><!-- End Hero Section -->
 
@@ -278,20 +278,10 @@ if (isset($_SESSION['username'])) {
                         <h2 class="text-center"><span style="color: rgb(78, 115, 223);">WELCOME&nbsp;</span>Lemery Colleges Alumni's</h2>
                     </div>
                     <form action="functions/login.php" method="post">
-                      <?php if (isset($_GET['error'])) { ?>
-                        <p class="error"><?php echo $_GET['error']; ?></p>
-                      <?php } ?>
-
-                              <div class="container">
-                                  <video id="preview" width="100%"></video>
-                              </div>
-                              <div class="container text-center">
-                                  <form method="post" class="form-horizontal">
-                                  <label>SCAN QR CODE HERE</label>
-                                  <input type="text" name="qrcode_text" id="text" readonny="" placeholder="INPUT QR CODE" class="form-control">
-                                  </form>
-                      <button type="submit">LOGIN</button>
-                      </div>
+                        <div class="form-floating mb-3"><input class="form-control form-control" type="text" name="username" placeholder="Username"><label class="form-label" for="floatingInput">Username : </label></div>
+                        <div class="form-floating mb-3"><input class="form-control form-control" type="password" name="password" placeholder="Password"><label class="form-label" for="floatingInput">Password : </label></div><button class="btn btn-primary w-100 mb-3" role="button" type="submit">Sign In</button>
+                        <div class="d-flex flex-column align-items-center mb-4"><a href="#" data-bs-target="#register" data-bs-toggle="modal">Create Account</a></div>
+                    
                       <div class="mt-5">Not yet a member?<a href="#" data-bs-target="#register" data-bs-toggle="modal"> here</a></div>
                       
                     </form>
